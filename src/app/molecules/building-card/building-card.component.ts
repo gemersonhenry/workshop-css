@@ -4,7 +4,9 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-building-card',
   templateUrl: './building-card.component.html',
   styleUrls: [
-    './building-card.component.scss'
+    './building-card.component-responsive.scss',
+    './building-card.component-desktop.scss',
+    './common.component.scss'
   ]
 })
 export class BuildingCardComponent implements OnInit {

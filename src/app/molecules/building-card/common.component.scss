@@ -1,0 +1,11 @@
+.contact {
+	border: 0;
+	font-size: 13px;
+	width: 80px;
+	height: 32px;
+	color: white;
+	font-weight: bold;
+	&--primary {
+		background-color: #ea5a0b;
+	}
+}
