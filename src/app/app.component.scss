@@ -1,20 +1,18 @@
 // Estilos para el modo responsive
 .app {
-  width: 100%;
-  background-color: lightblue;
+    width: 100%;
+    background-color: lightblue;
 }
 
 // Estilos para el modo tablet
 @media screen and (min-width: 768px) {
-  .app {
-    width: 600px;
-    margin: 0 auto;
-  }
+    .app {}
 }
 
 // Estilos para el modo desktop
 @media screen and (min-width: 960px) {
-  .app {
-    width: 920px;
-  }
+    .app {
+        width: 920px;
+        margin: 0 auto;
+    }
 }

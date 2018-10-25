@@ -1,34 +1,128 @@
 // Estilos para el modo responsive
 .building-card {
-  .left {
-    .colorful-label {
-
+    .left {
+        position: relative;
+        width: 100%;
+        height: 100vw;
+        .colorful-label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #ea5a0b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .image {
+            width: 100%;
+            height: 100%;
+            background-image: url('https://cde.urbania.g3c.pe/216583/project/2071/result-project/2071-25414465.jpg?1');
+            background-size: cover;
+        }
+        .contact-btn {
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+        }
+        .contact {
+            border: 0;
+            font-size: 13px;
+            width: 80px;
+            height: 32px;
+            color: white;
+            font-weight: bold;
+            &--primary {
+                background-color: #ea5a0b;
+            }
+        }
     }
-    .image {
-
+    .right {
+        position: relative;
+        box-sizing: border-box;
+        width: calc(100% - 14px);
+        height: 90px;
+        background-color: rgba(0, 0, 0, .65);
+        padding: 8px;
+        .title {
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+        }
+        .district {
+            font-size: 14px;
+            opacity: 0.5;
+            color: white;
+        }
+        .address {
+            display: none;
+        }
+        .description {
+            display: none;
+        }
+        .state {
+            display: none;
+        }
+        .area {
+            position: absolute;
+            color: white;
+            bottom: 8px;
+            left: 8px;
+        }
+        .bedrooms {
+            display: none;
+        }
+        .price-title {
+            position: absolute;
+            color: white;
+            right: 8px;
+            bottom: 28px;
+        }
+        .main-price {
+            position: absolute;
+            color: white;
+            bottom: 8px;
+            right: 8px;
+        }
+        .secondary-price {
+            display: none;
+        }
+        .mini-image {
+            display: none;
+        }
+        .contact-btn {
+            display: none;
+        }
     }
-    .photo-icon {
-
-    }
-    .video-icon {
-
-    }
-    .contact-btn {
-      
-    }
-  }
 }
 
 // Estilos para el modo tablet
 @media screen and (min-width: 768px) {
-  .building-card {
-
-  }
+    .building-card {}
 }
 
 // Estilos para el modo desktop
 @media screen and (min-width: 960px) {
-  .building-card {
-
-  }
+    .building-card {
+        display: flex;
+        flex-wrap: nowrap;
+        .left {
+            position: relative;
+            .colorful-label,
+            .photo-icon,
+            .video-icon,
+            .contact-btn {
+                position: absolute;
+            }
+            .colorful-label {}
+            .image {
+                width: 300px;
+                height: 300px;
+                background-image: url('https://picsum.photos/400/300');
+                background-size: cover;
+            }
+            .photo-icon {}
+            .video-icon {}
+            .contact-btn {}
+        }
+    }
 }
